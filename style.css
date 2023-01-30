@@ -1,0 +1,117 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Oswald', sans-serif;
+    ;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-color: black;
+    height: 100px;
+    border-bottom: 1px solid gray;
+    position: absolute ;
+    background: transparent;
+    width: 100%;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.header .logo{
+    font-size: 30px;
+}
+
+.header .logo i {
+    color: white;
+}
+
+.header .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0px 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.5s;
+
+
+}
+.header .menu a:first-child{
+    color: red;
+}
+
+.header .menu a:hover{
+    color: red;
+    transition: all 0.5s;
+
+}
+.carousel{
+    background-image: url(./image/home_slider.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel .container{
+    height: 800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.carousel h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    font-size: 80px;
+    line-height: 1.2;
+}
+.carousel h1:first-child{
+    font-size: 25px;
+    font-weight: 400;
+}
+.carousel button{
+    padding: 11px 43px;
+    color: white;
+    background: #db4e4e;
+    text-transform: uppercase;
+    border: 0px;
+    margin-top: 30px;
+
+}
+.carousel i{
+    margin-top: 30px;
+    color: white;
+    font-size: 35px;
+    animation: fadedown 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadedown {
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+    to{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+
